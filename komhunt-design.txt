@@ -1,0 +1,21 @@
+Design Idea:
+	Simple landing screen for rider input information. 
+
+	Input Weight (kg or lbs selector), 30sec 5 10 20 minute powers, FTP, location, 
+	and search radius or area. Allow then to search based on their location too?
+	
+	Calculates power to weight ratio for uphill segments. Power to weight only affected
+	mostly by anything over 3% grade (figure out way to sort these, maybe with a flat, 
+	uphill, or downhill selection option in the initial input). Then uses other power 
+	numbers to compare to segment leaderboards to determine which segments the rider could 
+	possibly KOM or trophy on. 
+	
+	Searches segments in determined area and compares rider data input.
+	
+	Rider then gets a list of segments that they may be able to KOM or trophy on. 
+	
+	Future plans....
+		-allow them to get a time estimate on segments, but that would require alot 
+		more calculation on our end...similar to bikecaclulator.com
+		-Allow them to login to Strava and out app be able to access their power	
+		curve to autofill the 5 10 20 minute powers...
