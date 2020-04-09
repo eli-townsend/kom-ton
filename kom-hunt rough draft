@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+padding: 15px 100px 15px 100px;
+}
+
+label {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: .3rem;}
+
+.header {
+  text-align: center;
+}
+
+.container {
+  width: 600px;
+  padding: 15px;
+  margin: 10px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 15px;
+  background-color: #FF8000;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-control {
+  display: block;
+  width: 75%;
+  height: 2rem;
+  padding: 0.5rem 0.8rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+} 
+
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+  }
+  .input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+} 
+
+.clue {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  color: #FFFFFF;
+  
+}
+
+.input-textarea{
+  width: 95%;
+  border-radius: 10px;
+  resize: vertical;
+  min-height: 100px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  
+}
+
+.submit-button {
+  display: block;
+  cursor: pointer;
+  background: #ffffff;
+  width: 100%;
+  height: 2rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet"> 
+<div class="container">
+  
+  <header class="header">
+    <h1 id="title" class="text-center">KOM Hunter</h1>
+    <p id="description" class="description text-center">
+      Enter the required information below to find segments for you take the crown.
+    </p>
+  </header> 
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="number-label" for="number">Rider and Bike Weight</label>
+      <input
+             type="number"
+             name="weight"
+             id="number"
+             min="0"
+             max="2000"
+             class="form-control"
+             placeholder="Weight in kgs"
+             required
+             />
+    </div>
+    <div class="form-group">
+        <p>Weight Unit Selection</p>
+        <select id="dropdown" name="weight-unit" class="form-control" required>
+          <option disabled selected value>Select Weight Unit</option>
+          <option value="kilos">Kilograms</option>
+          <option value="pounds">Pounds</option>
+        </select>
+      </div>
+    <br>
+    <div class="form-group">
+      <label id="number-label" for="number">30 Second Power</label>
+      <input
+             type="number"
+             name="30sec"
+             id="number"
+             min="0"
+             max="2000"
+             class="form-control"
+             placeholder="30 Second Power"
+             required
+             />
+    </div>
+    <div class="form-group">
+      <div class="form-group">
+      <label id="number-label" for="number">1 Minute Power</label>
+      <input
+             type="number"
+             name="1min"
+             id="number"
+             min="0"
+             max="2000"
+             class="form-control"
+             placeholder="1 Minute Power"
+             
+             />
+    </div>
+    <div class="form-group">
+      <div class="form-group">
+      <label id="number-label" for="number">5 Minute Power</label>
+      <input
+             type="number"
+             name="1min"
+             id="number"
+             min="0"
+             max="2000"
+             class="form-control"
+             placeholder="5 Minute Power"
+             
+             />
+    </div>
+      <div class="form-group">
+      <label id="number-label" for="number">10 Minute Power</label>
+      <input
+             type="number"
+             name="10min"
+             id="number"
+             min="0"
+             max="2000"
+             class="form-control"
+             placeholder="10 Minute Power"
+             
+             />
+    </div>
+      <div class="form-group">
+      <label id="number-label" for="number">20 Minute Power</label>
+      <input
+             type="number"
+             name="20min"
+             id="number"
+             min="0"
+             max="2000"
+             class="form-control"
+             placeholder="20 Minute Power"
+             />
+    </div>
+      <div class="form-group">
+      <label id="number-label" for="number">FTP (60 Minute Power)</label>
+      <input
+             type="number"
+             name="60min"
+             id="number"
+             min="0"
+             max="2000"
+             class="form-control"
+             placeholder="FTP"
+             />
+    </div
+     <div class="form-group">
+        <p>Segment Serach Radius</p>
+        <select id="dropdown" name="search-radius" class="form-control" required>
+          <option disabled selected value>Select a search distance</option>
+          <option value="mtb">5 Miles</option>
+          <option value="road">10 Miles</option>
+          <option value="cx">25 miles</option>
+          <option value="track">50 miles</option>
+        </select>
+      </div>
+    
+   
+
+<br>
+
+
+ 
+    <div class="form-group">
+     <button type="submit" id="submit" class="submit-button">
+     Find those KOMs
+      </button>
+      </form>
+    </div> 
+</div> 
+</body>
