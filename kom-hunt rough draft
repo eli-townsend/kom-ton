@@ -110,7 +110,7 @@ label {
              min="0"
              max="2000"
              class="form-control"
-             placeholder="Weight in kgs"
+             placeholder="Total Kit Weight"
              required
              />
     </div>
